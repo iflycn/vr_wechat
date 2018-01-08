@@ -1,0 +1,20 @@
+/* pages/index/index.wxss */
+
+page{
+  background: #f5f5f5;
+}
+
+.index_title{
+  margin-top: 10rpx;
+  color: #009b84;
+}
+
+.index_memo{
+    margin-top: 10rpx;
+    color: #999;
+}
+
+.pano_title{
+  font-size: 16pt;
+  color: #009b84;
+}

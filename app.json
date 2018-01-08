@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/pano_info/pano_info",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#009b84",
+    "navigationBarTitleText": "BLUES VR",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#009b84",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "VR",
+        "iconPath": "images/icon_tabbar_01.png",
+        "selectedIconPath": "images/icon_tabbar_01_hover.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/icon_tabbar_02.png",
+        "selectedIconPath": "images/icon_tabbar_02_hover.png"
+      }
+    ]
+  }
+}

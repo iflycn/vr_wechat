@@ -1,0 +1,2 @@
+<!--pages/pano_info/pano_info.wxml-->
+<web-view src="{{path}}"></web-view>
