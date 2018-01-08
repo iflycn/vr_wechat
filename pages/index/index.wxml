@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
 <view class="block">
-  <text class="index_title h1">BLUES <text class="strong">VR</text></text>
-  <text class="index_memo h5">使用以下设备可以获得更好视觉效果</text>
+  <view class="index_title h1">BLUES <text class="strong">VR</text></view>
+  <view class="index_memo h5">使用以下设备可以获得更好视觉效果</view>
   <image src="../../images/vr_device.png" mode="aspectFit" style="height: {{img_vr_device_h}}px;" class="img"></image>
 </view>
 
@@ -9,6 +9,7 @@
 <view class="weui-cells weui-cells_after-title">
   <navigator url="../pano_info/pano_info?v=107" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
     <view class="weui-cell__bd">冰岛蓝湖地热温泉</view>
+    <view class="weui-badge">New</view>
     <view class="weui-cell__ft weui-cell__ft_in-access"></view>
   </navigator>
   <navigator url="../pano_info/pano_info?v=106" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
@@ -41,6 +42,7 @@
 <view class="weui-cells weui-cells_after-title">
   <navigator url="../pano_info/pano_info?v=205" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
     <view class="weui-cell__bd">纳米比亚鬼镇卡曼斯科</view>
+    <view class="weui-badge">New</view>
     <view class="weui-cell__ft weui-cell__ft_in-access"></view>
   </navigator>
   <navigator url="../pano_info/pano_info?v=204" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
@@ -98,5 +100,5 @@
 </view>
 
 <view class="weui-footer footer">
-  <text class="weui-footer__text">https://github.com/iflycn/vr_wechat</text>
+  <view class="weui-footer__text">https://github.com/iflycn/vr_wechat</view>
 </view>

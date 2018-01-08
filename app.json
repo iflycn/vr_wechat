@@ -1,10 +1,10 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/pano_info/pano_info",
     "pages/logs/logs"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#009b84",
     "navigationBarTitleText": "BLUES VR",
     "navigationBarTextStyle":"white"
@@ -22,7 +22,7 @@
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "我的",
+        "text": "日志",
         "iconPath": "images/icon_tabbar_02.png",
         "selectedIconPath": "images/icon_tabbar_02_hover.png"
       }
