@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    img_vr_device_h: 0
+    img_vr_device_h: 0,
+    pano_type: [],
   },
 
   /**
@@ -16,9 +17,18 @@ Page({
     wx.getSystemInfo({
       success: function (res) {
         var windowWidth = res.windowWidth;
-        console.log("屏幕宽: " + windowWidth);
+        console.log("[Debug]: " + windowWidth);
         that.setData({
           img_vr_device_h: windowWidth / 900 * 326
+        })
+      }
+    })
+    wx.request({
+      url: "https://www.easy-mock.com/mock/5a53888d90626970a964c412/vr_wechat/list",
+      success: function (res) {
+        console.log("[Ajax]: " + res.data);
+        that.setData({
+          pano_type: res.data.pano
         })
       }
     })

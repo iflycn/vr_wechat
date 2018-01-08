@@ -5,99 +5,16 @@
   <image src="../../images/vr_device.png" mode="aspectFit" style="height: {{img_vr_device_h}}px;" class="img"></image>
 </view>
 
-<view class="weui-cells__title pano_title">风光</view>
-<view class="weui-cells weui-cells_after-title">
-  <navigator url="../pano_info/pano_info?v=107" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">冰岛蓝湖地热温泉</view>
-    <view class="weui-badge">New</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=106" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">唯美的法属波利尼西亚</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=105" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">梦中向往的海底世界</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=104" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">惊艳的九寨沟五彩池</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=103" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">迪拜城市建筑群</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=102" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">俯瞰纽约中央公园</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=101" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">震撼心灵的那一抹极光</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-</view>
-
-<view class="weui-cells__title pano_title">建筑</view>
-<view class="weui-cells weui-cells_after-title">
-  <navigator url="../pano_info/pano_info?v=205" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">纳米比亚鬼镇卡曼斯科</view>
-    <view class="weui-badge">New</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=204" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">巴黎诶菲尔铁塔</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=203" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">悉尼歌剧院</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=202" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">郑州千玺广场</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=201" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">卢克索卡纳克神庙</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-</view>
-
-<view class="weui-cells__title pano_title">人文</view>
-<view class="weui-cells weui-cells_after-title">
-  <navigator url="../pano_info/pano_info?v=305" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">复活节岛摩艾石像</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=304" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">秦始皇兵马俑坑内视角</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=303" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">西西伯利亚汉特人的家</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=302" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">西藏天葬骷髅墙</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=301" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">最后的国营理发店</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-</view>
-
-<view class="weui-cells__title pano_title">其他</view>
-<view class="weui-cells weui-cells_after-title">
-  <navigator url="../pano_info/pano_info?v=902" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">荒凉广袤的火星平原</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-  <navigator url="../pano_info/pano_info?v=901" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-    <view class="weui-cell__bd">驶离地球航向深空</view>
-    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-  </navigator>
-</view>
+<block wx:for="{{pano_type}}" wx:key="{{item.id}}">
+  <view class="weui-cells__title pano_title">{{item.type}}</view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="../pano_info/pano_info?v={{item.id}}" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{item.list}}" wx:key="{{item.id}}">
+      <view class="weui-cell__bd">{{item.title}}</view>
+      <view class="weui-badge" wx:if="{{item.isNew}}">New</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+</block>
 
 <view class="weui-footer footer">
   <view class="weui-footer__text">https://github.com/iflycn/vr_wechat</view>
