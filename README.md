@@ -10,15 +10,6 @@
 ```javascript
 onLoad: function (options) {
   var that = this;
-  wx.getSystemInfo({
-    success: function (res) {
-      var windowWidth = res.windowWidth;
-      console.log("[windowWidth]:"), console.log(windowWidth);
-      that.setData({
-        img_vr_device_h: windowWidth / 900 * 326
-      })
-    }
-  });
   wx.request({
     url: "https://www.easy-mock.com/mock/5a53888d90626970a964c412/vr_wechat/list",
     success: function (res) {
