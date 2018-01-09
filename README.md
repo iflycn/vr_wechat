@@ -33,7 +33,7 @@ onLoad: function (options) {
   wx.request({
     url: "url",
     success: function (res) {
-      console.log("[res.data]:"), console.log(res.data);
+      console.log("[res.data]: %o", res.data);
       that.setData({
         pano_type: res.data.pano
       })
@@ -63,37 +63,49 @@ joinFavorite: function (e) {
       if (res.confirm) {
         i < 0 ? favorites.unshift(id) : favorites.splice(i, 1);
         wx.setStorageSync("favorites", favorites);
-        console.log("[favorites]:"), console.log(favorites);
+        console.log("[favorites]: %o", favorites);
       }
     }
   });
 }
 ```
+### 获取收藏列表
+```html
+<!--pages/index/my_favorites.wxml-->
 
-## 列表
->风光
->>冰岛蓝湖地热温泉<br>
->>唯美的法属波利尼西亚<br>
->>梦中向往的海底世界<br>
->>惊艳的九寨沟五彩池<br>
->>迪拜城市建筑群<br>
->>俯瞰纽约中央公园<br>
->>震撼心灵的那一抹极光<br>
+<block wx:for="{{favorites_list}}" wx:for-index="i" wx:key="{{favorites_list[i][0]}}">
+  <navigator url="url?v={{favorites_list[i][0]}}">
+    <view>{{favorites_list[i][1]}}</view>
+    ...
+  </navigator>
+</block>
+```
+```javascript
+// pages/my_favorites/my_favorites.js
 
->建筑
->>纳米比亚鬼镇卡曼斯科<br>
->>巴黎诶菲尔铁塔<br>
->>悉尼歌剧院<br>
->>郑州千玺广场<br>
->>卢克索卡纳克神庙<br>
+data: {
+  favorites_list: []
+},
 
->人文
->>复活节岛摩艾石像<br>
->>秦始皇兵马俑坑内视角<br>
->>西西伯利亚汉特人的家<br>
->>西藏天葬骷髅墙<br>
->>最后的国营理发店<br>
+onLoad: function (options) {
+  var that = this;
+  wx.request({
+    url: "url",
+    success: function (res) {
+      var favorites_list = [], favorites = wx.getStorageSync("favorites") || [];
+      for (var i = 0; i < res.data.pano.length; i++) {
+        for (var j = 0; j < res.data.pano[i].list.length; j++) {
+          favorites.indexOf(res.data.pano[i].list[j].id) >= 0 && favorites_list.push([res.data.pano[i].list[j].id, res.data.pano[i].list[j].title]);
+        };
+      };
+      console.log("[favorites_list]: %o", favorites_list);
+      that.setData({
+        favorites_list: favorites_list
+      })
+    }
+  });
+}
+```
 
->其他
->>荒凉广袤的火星平原<br>
->>驶离地球航向深空<br>
+## 嵌入 H5
+详见 [https://github.com/iflycn/vr](https://github.com/iflycn/vr)

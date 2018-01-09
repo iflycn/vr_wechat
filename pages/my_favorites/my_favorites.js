@@ -22,7 +22,7 @@ Page({
             favorites.indexOf(res.data.pano[i].list[j].id) >= 0 && favorites_list.push([res.data.pano[i].list[j].id, res.data.pano[i].list[j].title]);
           };
         };
-        console.log("[favorites_list]:"), console.log(favorites_list);
+        console.log("[favorites_list]: %o", favorites_list);
         that.setData({
           favorites_list: favorites_list
         })

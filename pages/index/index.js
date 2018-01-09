@@ -20,7 +20,7 @@ Page({
         if (res.confirm) {
           i < 0 ? favorites.unshift(id) : favorites.splice(i, 1);
           wx.setStorageSync("favorites", favorites);
-          console.log("[favorites]:"), console.log(favorites);
+          console.log("[favorites]: %o", favorites);
         }
       }
     });
@@ -42,7 +42,7 @@ Page({
     wx.getSystemInfo({
       success: function (res) {
         var windowWidth = res.windowWidth;
-        console.log("[windowWidth]:"), console.log(windowWidth);
+        console.log("[windowWidth]: %o", windowWidth);
         that.setData({
           img_vr_device_h: windowWidth / 900 * 326
         })
@@ -52,7 +52,7 @@ Page({
     wx.request({
       url: "https://www.easy-mock.com/mock/5a53888d90626970a964c412/vr_wechat/list",
       success: function (res) {
-        console.log("[res.data]:"), console.log(res.data);
+        console.log("[res.data]: %o", res.data);
         that.setData({
           pano_type: res.data.pano
         })

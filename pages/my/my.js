@@ -24,7 +24,7 @@ Page({
     var that = this;
     wx.getUserInfo({
       success: function (res) {
-        console.log("[res.userInfo]:"), console.log(res.userInfo);
+        console.log("[res.userInfo]: %o", res.userInfo);
         that.setData({
           hasInfo: !0,
           user_head: res.userInfo.avatarUrl,
