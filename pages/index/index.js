@@ -14,7 +14,7 @@ Page({
     wx.showModal({
       title: i < 0 ? "加入收藏" : "移出收藏",
       content: "将“" + e.currentTarget.dataset.title + "”" + (i < 0 ? "加入" : "移出") + "个人收藏?",
-      confirmText: "好的",
+      confirmText: i < 0 ? "加入" : "移出",
       cancelText: "取消",
       success: function (res) {
         if (res.confirm) {
@@ -23,6 +23,14 @@ Page({
           console.log("[favorites]:"), console.log(favorites);
         }
       }
+    });
+  },
+
+  openLoading: function (v, t) {
+    wx.showToast({
+      title: v,
+      icon: "loading",
+      duration: t
     });
   },
 
@@ -40,6 +48,7 @@ Page({
         })
       }
     });
+    that.openLoading("全景图加载中", 1000);
     wx.request({
       url: "https://www.easy-mock.com/mock/5a53888d90626970a964c412/vr_wechat/list",
       success: function (res) {

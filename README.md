@@ -7,11 +7,31 @@
 
 ## 关键代码
 ### 获取全景图列表
+```html
+<!--pages/index/index.wxml-->
+
+<block wx:for="{{pano_type}}" wx:key="{{item.id}}">
+  <view>{{item.type}}</view>
+  <view>
+    <navigator url="url?v={{item.id}}" wx:for="{{item.list}}" wx:key="{{item.id}}">
+      <view>{{item.title}}</view>
+      <view wx:if="{{item.isNew}}">New</view>
+      ...
+    </navigator>
+  </view>
+</block>
+```
 ```javascript
+// pages/index/index.js
+
+data: {
+  pano_type: []
+},
+
 onLoad: function (options) {
   var that = this;
   wx.request({
-    url: "https://www.easy-mock.com/mock/5a53888d90626970a964c412/vr_wechat/list",
+    url: "url",
     success: function (res) {
       console.log("[res.data]:"), console.log(res.data);
       that.setData({
@@ -22,13 +42,22 @@ onLoad: function (options) {
 }
 ```
 ### 加入/移除收藏
+```html
+<!--pages/index/index.wxml-->
+
+<navigator bindlongpress="joinFavorite" data-id="{{item.id}}" data-title="{{item.title}}">
+  ...
+</navigator>
+```
 ```javascript
+// pages/index/index.js
+
 joinFavorite: function (e) {
   var id = e.currentTarget.dataset.id, favorites = wx.getStorageSync("favorites") || [], i = favorites.indexOf(id);
   wx.showModal({
     title: i < 0 ? "加入收藏" : "移出收藏",
     content: "将“" + e.currentTarget.dataset.title + "”" + (i < 0 ? "加入" : "移出") + "个人收藏?",
-    confirmText: "好的",
+    confirmText: i < 0 ? "加入" : "移出",
     cancelText: "取消",
     success: function (res) {
       if (res.confirm) {
