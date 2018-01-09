@@ -1,0 +1,10 @@
+/* pages/my_favorites/my_favorites.wxss */
+
+page {
+  background: #f5f5f5;
+}
+
+.pano_title {
+  font-size: 16pt;
+  color: #009b84;
+}

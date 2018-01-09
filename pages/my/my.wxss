@@ -1,1 +1,21 @@
 /* pages/my/my.wxss */
+
+page {
+  background: #f5f5f5;
+}
+
+.my_userinfo{
+  margin: 30rpx 0;
+  text-align: center;
+}
+
+.user_head{
+  width: 80px;
+  height: 80px;
+  border: 2px solid #009b84;
+  border-radius: 50%;
+}
+
+.user_name{
+  color: #009b84;
+}

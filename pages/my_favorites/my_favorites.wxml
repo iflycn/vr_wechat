@@ -1,0 +1,10 @@
+<!--pages/index/my_favorites.wxml-->
+<view class="weui-cells__title pano_title">我的收藏</view>
+<view class="weui-cells weui-cells_after-title">
+  <block wx:for="{{favorites_list}}" wx:for-index="i" wx:key="{{favorites_list[i][0]}}">
+    <navigator url="../pano_info/pano_info?v={{favorites_list[i][0]}}" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">{{favorites_list[i][1]}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </block>
+</view>

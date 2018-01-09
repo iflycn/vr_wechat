@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/pano_info/pano_info",
-    "pages/logs/logs"
+    "pages/my/my",
+    "pages/my_favorites/my_favorites"
   ],
   "window": {
     "navigationBarBackgroundColor": "#009b84",
@@ -21,8 +22,8 @@
         "selectedIconPath": "images/icon_tabbar_01_hover.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
+        "pagePath": "pages/my/my",
+        "text": "我的",
         "iconPath": "images/icon_tabbar_02.png",
         "selectedIconPath": "images/icon_tabbar_02_hover.png"
       }

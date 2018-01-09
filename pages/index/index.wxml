@@ -8,7 +8,7 @@
 <block wx:for="{{pano_type}}" wx:key="{{item.id}}">
   <view class="weui-cells__title pano_title">{{item.type}}</view>
   <view class="weui-cells weui-cells_after-title">
-    <navigator url="../pano_info/pano_info?v={{item.id}}" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{item.list}}" wx:key="{{item.id}}">
+    <navigator url="../pano_info/pano_info?v={{item.id}}" open-type="navigate" class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{item.list}}" wx:key="{{item.id}}" bindlongpress="joinFavorite" data-id="{{item.id}}" data-title="{{item.title}}">
       <view class="weui-cell__bd">{{item.title}}</view>
       <view class="weui-badge" wx:if="{{item.isNew}}">New</view>
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
