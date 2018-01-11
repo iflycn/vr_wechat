@@ -31,7 +31,7 @@ Page({
       title: v,
       icon: "loading",
       duration: t
-    });
+    })
   },
 
   /**
@@ -56,6 +56,13 @@ Page({
         that.setData({
           pano_type: res.data.pano
         })
+      },
+      fail: function (error) {
+        console.log("[error]: %o", error);
+        wx.showModal({
+          content: "全景图片加载失败，请检查你的网络",
+          showCancel: false
+        });
       }
     });
   },

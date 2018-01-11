@@ -1,5 +1,5 @@
 <!--pages/my/my.wxml-->
-<view class="my_userinfo block">
+<view class="my_userinfo block" wx:if="{{hasInfo}}">
   <image src="{{user_head}}" mode="aspectFit" class="user_head"></image>
   <view class="user_name h5">{{user_name}}</view>
 </view>

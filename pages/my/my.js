@@ -14,7 +14,7 @@ Page({
     wx.showModal({
       content: "全景图片浏览小程序，支持 VR 模式。详见 https://github.com/iflycn/vr_wechat",
       showCancel: false
-    });
+    })
   },
 
   /**
